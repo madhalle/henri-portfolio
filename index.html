@@ -1,0 +1,83 @@
+---
+layout: default
+section_id: home
+works:
+  - image: images/bangers/landscape/1landscape.jpg
+    class: landscapes
+    title: Beautiful Girl
+    desc: "Design &amp; Development"
+  - image: images/bangers/portraits/1portraits.jpg
+    class: portraits print
+    title: Look at me
+    desc: "Design &amp; Development"
+  - image: images/bangers/msn-work-3.jpg
+    class: people wide
+    title: Am I cute
+    desc: "Design &amp; Development"
+  - image: images/bangers/msn-work-4.jpg
+    class: development
+    title: Umbrella
+    desc: "Design &amp; Development"
+  - image: images/bangers/msn-work-5.jpg
+    class: print brand
+    title: Canned Bros
+    desc: "Design &amp; Development"
+  - image: images/bangers/portraits/2portraits.jpg
+    class: portraits
+    title: Hale
+    desc: "Design &amp; Development"
+  - image: images/bangers/portraits/3portraits.jpg
+    class: portraits wide
+    title: A beautiful day
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/2landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+  - image: images/bangers/portraits/4portraits.jpg
+    class: portraits wide
+    title: portraits wide
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/3landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/4landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/5landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/6landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/7landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+  - image: images/bangers/landscape/8landscape.jpg
+    class: landscapes
+    title: Flower Book
+    desc: "Design &amp; Development"
+---
+
+<div class='mod modMasonryGallery'>
+  <ul class='gallery'>
+    {% for work in page.works %}
+      <li class='{{work.class}}'>
+        <a href='portfolio-item.html'>
+          <img alt="" src="{{work.image}}" />
+          <div class='overlay'>
+            <div class='thumb-info'>
+              <h3>{{work.title}}</h3>
+              <p>{{work.desc}}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

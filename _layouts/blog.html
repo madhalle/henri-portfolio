@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html base="photos.html" %}
+
+    <div id='main' role='main'>
+      <div class='full' style='background: #333'>
+        <div class='row'>
+          <div class='large-12 columns'>
+            <h2 style='color: #fff;'>Blog - Stories in the works</h2>
+            <h3 style='color: #fff;'>Come back soon!</h3>
+          </div>
+        </div>
+        <div class='two spacing'></div>
+      </div>
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
