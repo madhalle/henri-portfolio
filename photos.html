@@ -178,51 +178,7 @@
     </ul>
   </div>
   <ul class='gallery'>
-    <!-- <?php
-        $dir = '/images/bangers/landscape';
-        $file_display = array('jpg');
-
-        if ( file_exists( $dir ) == false ) {
-           echo 'Directory \'', $dir, '\' not found!';
-        } else {
-           $dir_contents = scandir( $dir );
-
-            foreach ( $dir_contents as $file ) {
-               $file_type = strtolower( end( explode('.', $file ) ) );
-               if ( ($file !== '.') && ($file !== '..') && (in_array( $file_type, $file_display)) ) {
-                  echo '<img src="file_viewer.php?file=', base64_encode($dir . '/' . $file), '" alt="', $file, '"/>';
-               break;
-               }
-            }
-        }
-    ?>
-    <?php
-        $filename = base64_decode($_GET['file']);
-        // Check the folder location to avoid exploit
-        if (dirname($filename) == '/home/user/Pictures')
-            echo file_get_contents($filename);
-    ?> -->
-
-
-    <!-- <?php
-    $dirname = "media/images/bangers/landscape";
-      $images = glob($dirname."*.jpg");
-
-      foreach($images as $image) {
-        renderP(function()
-            {
-              echo '<li class='landscapes'>
-                  <!-- <a href='portfolio-item.html'> -->
-                    <!-- <img src=".$image" />
-                    <div class='overlay'>
-                      <div class='thumb-info'>
-                      </div>
-                    </div>
-                  </a>
-                </li>';
-            }
-
-      ?> --> 
+    
       <li class='landscapes'>
         <!-- <a href='portfolio-item.html'> -->
           <img alt="" src="images/bangers/landscape/1landscape.jpg" />
